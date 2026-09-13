@@ -1,0 +1,19 @@
+{
+  "name": "artitero",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A planet as the main character: a deterministic four-layer world simulator you tune rather than command.",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8899",
+    "test": "node --test test/determinism.test.mjs test/model.test.mjs",
+    "smoke": "node test/smoke.mjs",
+    "browser-check": "node test/browser-check.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}
